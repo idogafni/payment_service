@@ -1,0 +1,13 @@
+services:
+  maildev:
+    build:
+      context: .
+      dockerfile: maildev.Dockerfile
+    expose:
+      - 1080
+      - 1025
+
+  api:
+    build:
+      context: .
+      dockerfile: e2e.Dockerfile
